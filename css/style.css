@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color: #82cc6b;
+    --secondary-color: #60c457;
+    --font-color: #000000;
+    --gap: 15px;
+}
+
+html{
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+body, .header_photo{
+    margin: 0 auto;
+}
+.header, .main, .header_photo, .main_name, .text, .main_list{
+    margin-bottom: var(--gap);
+}
+
+body{
+    width: 290px;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color);
+}
+
+.header{
+    position: relative;
+}
+.header_photo{
+    --header_photo-size: 200px;
+
+    height: var(--header_photo-size);
+    width: var(--header_photo-size);
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.header_photo {
+    display: block;
+}
+.main_name{
+    font-size: 26px;
+}
+.header_nickname{
+    font-size: 20px;
+}
+.text{
+    font-size: 15px;
+}
+.header_nickname, .main_name, .text, .footer{
+    text-align: center;
+}
+.link_lang{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.link_lang:hover{
+    opacity: 0.5;
+}
+.footer{
+    padding: 15px;
+}
+.main_list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link_icon{
+
+    --link_icon-size: 25px;
+
+    width: var(--link_icon-size);
+    height: var(--link_icon-size);
+}
+.link_icon:hover{
+    opacity: 0.5;
+}
+
+.large-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: var(--secondary-color);
+    height: 50px;
+    border-radius: 35px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.large-button:hover{
+    background-color: var(--main-color);
+}
+
+.footer{
+    border-top: 2px solid black ;
+    margin-top: auto;
+}
+
+@media  screen and (min-width: 430px) {
+    
+    body{
+        width: 410px;
+    }
+
+}
+
+@media  screen and (min-width: 530px) {
+    
+    body{
+        width: 500px;
+    }
+
+    .main_name{
+        font-size: 35px;
+    }
+
+    .link_icon{
+
+        --link_icon-size: 35px;
+    
+        width: var(--link_icon-size);
+        height: var(--link_icon-size);
+    }
+
+    .header_nickname{
+        font-size: 25px;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+}
