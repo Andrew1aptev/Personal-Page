@@ -87,7 +87,7 @@ a, li{
 
 .link_icon{
 
-    --link_icon-size: 25px;
+    --link_icon-size: 45px;
 
     width: var(--link_icon-size);
     height: var(--link_icon-size);
